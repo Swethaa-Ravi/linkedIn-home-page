@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>LinkedIn</title>
+    <style>
+        body,html{
+            margin: 0 auto;
+            background-color: rgb(230, 234, 240);
+        }
+        section{
+            display: inline-block;
+            vertical-align: top;
+        }
+        #topsec{
+            background-color: rgb(19, 46, 65);
+            height: 50px;
+            width: 1520px;
+            float: left;
+        }
+        #img1{
+            height: 32px;
+            width: 32px;
+            left: 200px;
+            top: 9px;
+            position: relative;
+            border-radius: 5%;
+            margin: 0;
+            padding: 0;
+        }
+        input{
+            height: 32px;
+            width: 250px;
+            top: -3px;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            left: 205px;
+            border: none;
+            outline: none;
+            border-radius: 2%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            background-color: rgb(224, 233, 235);
+        }
+        #leftsec1{
+            height: 340px;
+            width: 200px;
+            border: 1px solid rgb(204, 202, 202);
+            border-radius: 1%;
+            box-shadow: 1px 1px 1px rgb(204, 202, 202);
+            margin-left: 200px;
+            margin-top: 50px;
+            background-color: white;
+        }
+        #leftsec2{
+            height: 130px;
+            width: 200px;
+            margin-left: 200px;
+            margin-top: 10px;
+            border: 1px solid rgb(204, 202, 202);
+            border-radius: 3px;
+            box-shadow: 1px 1px 1px rgb(204, 202, 202);
+            background-color: white;
+        }
+        #rightsec1{
+            height: 300px;
+            width: 300px;
+            margin-top: 50px;
+            border: 1px solid rgb(204, 202, 202);
+            border-radius: 3px;
+            box-shadow: 1px 1px 1px rgb(204, 202, 202);
+            display: inline-block;
+            background-color: white;
+        }
+        #rightsec2{
+            height: 200px;
+            width: 300px;
+            border: 1px solid rgb(204, 202, 202);
+            border-radius: 3px;
+            box-shadow: 1px 1px 1px rgb(204, 202, 202);
+            background-color: white;
+            margin-top: 10px;
+        }
+        #midsec1{
+            height: 130px;
+            width: 550px;
+            border: 1px solid rgb(204, 202, 202);
+            border-radius: 3px;
+            box-shadow: 1px 1px 1px rgb(204, 202, 202);
+            background-color: white;
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+        #midsec2{
+            padding-top: 13px;
+            background-color: white;
+        }
+        .midsect{
+            height: 450px;
+            width: 550px;
+            border: 1px solid rgb(204, 202, 202);
+            border-radius: 3px;
+            box-shadow: 1px 1px 1px rgb(204, 202, 202);
+            background-color: white;
+            margin-bottom: 20px;
+        }
+        .midsect2{
+            background-color: white;
+        }
+        #blue{
+            background-color: rgb(29, 152, 209);
+            height: 50px;
+        }
+        #img2{
+            border-radius: 50%;
+            border: 3px solid white;
+            height: 70px;
+            width: 70px;
+            align-self: center;
+            margin-left: 65px;
+            margin-top: 15px;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        #l1{
+            text-decoration: none;
+            padding-left: 50px;
+            padding-top: 220px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        #l2{
+            text-align: center;
+            color: rgb(92, 91, 90);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 17px;
+            font-size: 12px;
+        }
+        .l3{
+            color: rgb(92, 91, 90);
+            font-size: 14px;
+            padding-left: 5px;
+        }
+        .l4{
+            text-decoration: none;
+            font-size: 14px;
+            padding-left: 5px;
+        }
+        .r1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 13px;
+            padding-top: 15px;
+        }
+        .r2{
+            color: rgb(92, 91, 90);
+            font-size: 12px;
+        }
+        #r3{
+            padding-left: 20px;
+            font-size: 17px;
+        }
+        #m1{
+            padding-left: 42px;
+            padding:10px ;
+            font-size: 18px;
+        }
+        #m1:hover{
+            background-color: rgb(230, 234, 240);
+        }
+        .m2{
+            margin-left: 32px;
+            margin-right: 32px;
+            padding: 10px;
+        }
+        .m3{
+            display: inline-block;
+            line-height: 4px;
+            font-size: 12px;
+            color: rgb(92, 91, 90);
+        }
+        .m4{
+            padding-left: 10px;
+        }
+        #img3{
+            height: 180px;
+            width: 280px;
+            padding: 10px;
+        }
+        .img4{
+            padding-left: 15px;
+            display: inline-block;
+            padding-top: 20px;
+        }
+        .img5{
+            height: 250px;
+            width: 550px;
+            padding-bottom: 15px;
+        }
+        .sticky{
+            top:0;
+            position: fixed;
+        }
+        a:hover{
+            text-decoration:underline rgb(29, 152, 209) ;
+            color:rgb(29, 152, 209);
+        }
+        .m2:hover{
+            background-color: rgb(230, 234, 240);
+        }
+        li:hover{
+            background-color: rgb(230, 234, 240);
+        }
+        .t1{
+            float: right;
+            color: white;
+            margin-left: 40px;
+        }
+        .t1:hover{
+            text-decoration: underline white;
+        }
+        #try{
+            color: tomato;
+            height: 50px;
+            width: 90px;
+            font-size: 13px;
+            margin-right: 20px;
+        }
+        #try:hover{
+            text-decoration: underline tomato;
+        }
+    </style>
+</head>
+<body>
+    <header id="top">
+        <div id="topsec">
+            <img src="lk1.jpg" id="img1">
+            <input type="text" placeholder=" Search">
+            <p class="t1" id="try">Try Premium Free for 1 Month</p>
+            <p class="t1">Work</p>
+            <p class="t1">Me</p>
+            <p class="t1">Notification</p>
+            <p class="t1">Messaging</p>
+            <p class="t1">Jobs</p>
+            <p class="t1">My network</p>
+            <p class="t1">Home</p>
+        </div>
+    </header>
+
+    <section style="position: static;">
+        <div id="leftsec1">
+        <div id="blue">
+            <img src="swe1.jpg" id="img2">
+            <span id="l1">Swethaa Ravi</span>
+            <p id="l2">Student at Vellore Institute of Technology, Vellore</p>
+            <hr>
+            <p><span class="l3">Connections</span><br>
+            <a href="#" class="l4">Grow your network</a></p>
+            <p><span class="l3">Access exclusive tools & insight</span>
+            <a href="#" class="l4">Premium Free for 1 Month</a></p>
+            <hr>
+            <a href="#" class="l4">Saved items</a>
+        </div>
+        </div>
+        <div id="leftsec2">
+            <a href="#" class="l4" style="color: rgb(29, 152, 209);">Groups</a>
+            <p class="l4">Events</p>
+            <a href="#" class="l4" style="color: rgb(29, 152, 209);">Followed Hashtags</a>
+            <hr>
+            <a href="#" class="l4" style="padding-left: 60px;">Discover more</a> 
+        </div>
+    </section>
+    <section>
+        <div id="midsec1">
+            <p id="m1">Start a post</p>
+            <hr>
+            <div id="midsec2">
+                <span class="m2">Photo</span>
+                <span class="m2">Video</span>
+                <span class="m2">Write article</span>
+                <span class="m2">More</span>
+            </div>
+
+        </div>
+        <div class="midsect">
+            <img src="lk3.jpg" class="img4">
+            <div class="m3">
+            <a href="#">LinkedIn Marketing Solutions</a>
+            <p>4,263,523 followers</p>
+            <p>Promoted</p>
+            </div>
+            <p class="m4">You’re only a few steps away from generating high-quality leads on LinkedIn. Get started with LinkedIn ads. https://lnkd.in/ezSG7VS</p>
+            <img src="lk4.jpg" class="img5">
+            <div class="midsect2">
+                <span class="m2">Like</span>
+                <span class="m2">Comment</span>
+                <span class="m2">Share</span>
+                <span class="m2">Send</span>
+            </div>
+        </div>
+        <div class="midsect">
+            <img src="lk3.jpg" class="img4">
+            <div class="m3">
+            <a href="#">LinkedIn Marketing Solutions</a>
+            <p>4,263,523 followers</p>
+            <p>Promoted</p>
+            </div>
+            <p class="m4">You’re only a few steps away from generating high-quality leads on LinkedIn. Get started with LinkedIn ads. https://lnkd.in/ezSG7VS</p>
+            <img src="lk7.jpg" class="img5">
+            <div class="midsect2">
+                <span class="m2">Like</span>
+                <span class="m2">Comment</span>
+                <span class="m2">Share</span>
+                <span class="m2">Send</span>
+            </div>
+        </div>
+        <div class="midsect">
+            <img src="lk3.jpg" class="img4">
+            <div class="m3">
+            <a href="#">LinkedIn Marketing Solutions</a>
+            <p>4,263,523 followers</p>
+            <p>Promoted</p>
+            </div>
+            <p class="m4">You’re only a few steps away from generating high-quality leads on LinkedIn. Get started with LinkedIn ads. https://lnkd.in/ezSG7VS</p>
+            <img src="lk5.jpg" class="img5">
+            <div class="midsect2">
+                <span class="m2">Like</span>
+                <span class="m2">Comment</span>
+                <span class="m2">Share</span>
+                <span class="m2">Send</span>
+            </div>
+
+        </div>
+        <div class="midsect">
+            <img src="lk3.jpg" class="img4">
+            <div class="m3">
+            <a href="#">LinkedIn Marketing Solutions</a>
+            <p>4,263,523 followers</p>
+            <p>Promoted</p>
+            </div>
+            <p class="m4">You’re only a few steps away from generating high-quality leads on LinkedIn. Get started with LinkedIn ads. https://lnkd.in/ezSG7VS</p>
+            <img src="lk6.jpg" class="img5">
+            <div class="midsect2">
+                <span class="m2">Like</span>
+                <span class="m2">Comment</span>
+                <span class="m2">Share</span>
+                <span class="m2">Send</span>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="rightsec1">
+            <p id="r3">Today's news and views</p>
+            <ul>
+                <li class="r1"><a href="#">Will Ola, Zoomcar trim fleet?</a><br>
+                    <span class="r2">19hrs ago  655 readers</span>
+                </li>
+                <li class="r1"><a href="#">Will Ola, Zoomcar trim fleet?</a><br>
+                    <span class="r2">19hrs ago  655 readers</span>
+                </li>
+                <li class="r1"><a href="#">Will Ola, Zoomcar trim fleet?</a><br>
+                    <span class="r2">19hrs ago  655 readers</span>
+                </li>
+                <li class="r1"><a href="#">Will Ola, Zoomcar trim fleet?</a><br>
+                    <span class="r2">19hrs ago  655 readers</span>
+                </li>
+            </ul>
+        </div>
+        <div id="rightsec2">
+            <img src="lk2.jpg" id="img3">
+        </div>
+    </section>
+    
+    <script>
+        window.onscroll= function() {MyFunction()};
+        var sticky= document.getElementById("top").offsetTop;
+        var leftsec2=document.getElementById("leftsec2").offsetTop;
+        var rightsec2=document.getElementById("rightsec2").offsetTop;
+        function MyFunction(){
+            console.log(window.pageYOffset);
+            if (window.pageYOffset > sticky){
+               document.getElementById("top").classList.add("sticky");
+            } 
+            else{
+                document.getElementById("top").classList.remove("sticky");
+            }
+            if (window.pageYOffset > leftsec2){
+               document.getElementById("leftsec2").classList.add("sticky");
+               document.getElementById("leftsec2").style.top=50+"px";
+            } 
+            else{
+                document.getElementById("leftsec2").classList.remove("sticky");
+            }
+            if (window.pageYOffset > rightsec2){
+               document.getElementById("rightsec2").classList.add("sticky");
+               document.getElementById("rightsec2").style.top=50+"px";
+            } 
+            else{
+                document.getElementById("rightsec2").classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
